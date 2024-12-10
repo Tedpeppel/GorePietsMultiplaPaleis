@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES6",              // Moderne JavaScript-output
+    "module": "ESNext",           // Gebruik ES Modules
+    "rootDir": "./src",           // Bronbestanden in de src-map
+    "outDir": "./dist",           // Output naar de dist-map
+    "strict": true                // Strikte TypeScript-checks
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gore Piet's Multipla Paleis</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link naar je CSS -->
+</head>
+<body>
+    <header>
+        <h1>Gore Piet's Multipla Paleis</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#cars">Auto's</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+        </section>
+        
+        <section id="cars">
+            <h2>Auto-overzicht</h2>
+            <div id="car-list">
+                <!-- dynamic list -->
+            </div>
+            <h3>Multiplaanmelden?</h3>
+    
+        <form id="car-form">
+            <label for="brand">Merk:</label>
+            <input type="text" id="brand" name="brand" required>
+
+            <label for="model">Model:</label>
+            <input type="text" id="model" name="model" required>
+
+            <label for="year">Bouwjaar:</label>
+            <input type="number" id="year" name="year" required min="1900" max="2100">
+
+            <label for="price">Prijs:</label>
+            <input type="number" id="price" name="price" required min="0">
+
+            <label for="hasAPK">APK:</label>
+            <select id="hasAPK" name="hasAPK" required>
+            <option value="true">Ja</option>
+            <option value="false">Nee</option>
+            </select>
+
+        <button type="submit">Voeg Auto Toe</button>
+        </form>
+        </section>
+
+      
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Neem contact met ons op voor meer informatie.</p>
+        </section>
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gore Piet's Multipla Paleis</p>
+    </footer>
+
+    <script type="module" src="../dist/main.js"></script> <!-- Link naar je gecompileerde JS -->
+</body>
+</html>
